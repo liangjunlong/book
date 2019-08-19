@@ -1,0 +1,48 @@
+<?php
+/* *
+ * 配置文件
+ * 版本：1.0
+ * 日期：2016-06-06
+ * 说明：
+ * 以下代码只是为了方便商户测试而提供的样例代码，商户可以根据自己网站的需要，按照技术文档编写,并非一定要使用该代码。
+ * 该代码仅供学习和研究支付宝接口使用，只是提供一个参考。
+ */
+
+//↓↓↓↓↓↓↓↓↓↓请在这里配置您的基本信息↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+
+//合作身份者ID，签约账号，以2088开头由16位纯数字组成的字符串，查看地址：https://openhome.alipay.com/platform/keyManage.htm?keyType=partner
+$alipay_config['partner'] = '2018022802289318';
+$alipay_config['private_key']='MIIEowIBAAKCAQEAulkMZWPrBJ1JT7FTHLYzDE4ZlbPmL+li3ewRnU34U57sgESpTtN+rR6guY4Ip3wYxNI2qImGQOvaW5oodF4wGKDcLCxnC5+zBGJETaqdGB4v385SIMGfC1CBkCihLnfGkPKSuS4Aq97qDvh8oEGZUgQU+hfCmWXqU2np7h1kEAKQe/4QjnwztOkqRLjM/PdP+0LNxi172bdYIUkozvRmkWo+Injdzg49yUKNdWPLhC1v59n9L1G/ObJ+4iQoLaWUPWmKoo9Fk5vy8naujPBm114eGu+bM4zgtev66BH8mk4KxEJBavRtTh9swcWDtEDmdG93LwCoSkGLyY4pVPG0OQIDAQABAoIBACZax7tiqm/Ds+AsPlANjEo/FPMEGR/JaKkGusVm0/LaJhFskHCCBXO6dxhaDJv0ZeC0570euTxJjyMFgsgYzsty6H5LEVaKIz2GwEpAEJ9zLyVggPTvBT497rzuL+axjnQtCVgGCOtXMVOtf3E4r0b7QhoLo+kQ2f8bMKPq9rp4gk5RoBDfPBvAtvbOmHvJIznifvEfCexOGFU8YIUwpm5SKBWX3mGiamW6XwfLPdVFFxtYTLLrQjTNP2DigUoGYJwMI80BOexuVxQp+lixg+lBpnwzUQImL5gJPlLujtvB/cJvOIuEVOBhTxTo/sfNsifasrIG6xMXiF3DYCBqcVECgYEA8PQEua+HvDKTonZQ+Fil9pKpfme29to+Bsxi/Wve6pKn0/tuV8DRu9nBBMXxJ4RHjaSOzg07e8GYHhW6oCFNtPB9rHT5szXyOWXQeoVnWdAmVlsPhGRAMFi+pA7O4SxZIyKtoXhtQA3RgFe8huDROlOqGvI/aZiNgfl7ZU2kWE0CgYEAxfwV1m85Jm76vjn70aLTXsdweMSpg4LXnAFmR0smHdzaUd1n3CqP11rQfR/VOL4ofbAbt95akIU6PU5qqrY03S+RBWJ+3/mkRLCOKreerMFFkEJpqOWYdKdUM0LD9KaNnUjbVrvL7ZpfWxx4BGvOEmRuiuQ6U0kaBQsodc2sQZ0CgYEAlkBkDfIyHx4ex8kl1qdY3ng4LzW3dxlCYnTjKYoxmG7ZLqvz886uOoif/zz7kxu+jsnVrxG7TQG8vM3p8V6zGSh6Badv6duy7y3ZIf28I9pTfbgM5g6ppDxCrQT65pkEAI/oW+8/mRjE0lZjnmvkrI1tXp4/Arb5TtpmoxYWbGUCgYAeClnl54psYnp5UqL69BHOV8ShDnYKFlhQu4WhW6206kXWFhokNfENZCIuWh4oNfI+3/HUvFBRjWWA190nee4bgZQnlQJbSa27Hm7z3FifLdQ4R1tw3SV8zcbg4EiLXpouO1fMmUIgE0RUtsUfJpxl/gcn2+ldqcHg8gh5l3ODoQKBgCjipU04BY7R9Q6nGtDg5qSwMX8VYSwyN3j8zOdzWtXBIHxh4ND4HssefNQs+9TB1QjTvTH5XerbZEh3BaXwicEX/zsz+31vBzpQHcFM6RX5ST49tP3QJHs+n6tOr/Xe8JSRl3w7T5jv8LBeymtb+abx8v2fVr1njnYHRiQUuu0F';
+//支付宝的公钥，查看地址：https://openhome.alipay.com/platform/keyManage.htm?keyType=partner
+$alipay_config['alipay_public_key'] = 'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhGt9taOjNL4NR3AxA/tGltkyY5QYbzawxqaTVJLnFwxcc9siMyH0EDoXQlMiIf7PokRZ04vUawNPbZt5QDQ25cA4lvSGJWjGcHnBn1vXqrNuTOvIbCyeFWbN3pV+QNMUvqV3vr+FsPoF6FMQyoGJNj6zi3xm4FBAAzl6CeCId/MpkPyQNf4DCGrHdTaJOM0zyEApQfgBe24ivofMfj+aEHDN55/glfFWn4BHgOV2Tv49ftl6nvVG6uQ1Y03wbrTxogT99zyGrlLLgBPRwUQsS8Y/qFpWO47EWHuErYJyAADUz80/aJohsELFHgaTG+h9120QfcNz5OJ8zujHPf83EQIDAQAB';
+$alipay_config['app_id'] = '2018022802289318';
+
+/*
+ $alipay_config['partner'] = '2088821790159635';
+$alipay_config['private_key']='MIIEpQIBAAKCAQEAuyO7qFA9sVVvCaZCra2KFn2afYB8HqgRtJKTtABdEbSExbS4dcQrwJ5iy6Mo0ZsJp7brLuXuXt7xybMd1VcjfAnmsaTlhWzsVrfKDjIZboePSyhbnHShdIy2ASKJAWKn5myTNfw+Ha/y5ALfn0HF7sdzC/U8gkjCaSRZ+pOGsnVENl3YjBm4+EfSvQYY9LRpPISFDSGpjZmbI5+/Mq6LAUgmdUZg2L9bqGp/7hci3VS8ptHplNpvt1QMmKQF9kdfw5qed0RgkUlbXYofQ9jxzrFbEaGuyc1YKciUJxacd6O8wqN0WJlODdbFh3M+W0jJ/Q9CihS8UnxggWOgAJuVWQIDAQABAoIBAQCILYZ/AnUCOFMmyG+5BpF3sErdjMPFYzQPHKKS17jiC2SaodmhCPF1p0vpN3+al6E9BCS76eG986oqxkatWk2eE25mUsIah5qrt+42ykorXkXtwR55CX372/ENfl4IPgxD5zpwjG9/Fuw+88BamXg5O7YCO6CehefCrwszBmt8LA1Wah2XyJy9wuBF4A1AWKfdotEmaMbOBENWg+Ep4tLOhHU+rPL4sG091EO0MxWJYFCXPXoUXWP74okiuBXEGR9Mg4XOeyCbZWAYx0cxkJmrXQjPVZcHv5LimAYCg4AXI7Zy1IoVjO9NCc2G1YGHigiNj8+AZl3Pw0JBMHUgSAMBAoGBAPBaqaCueFcHziRifFM4k8l9zQoNmF5QCSXNQuZ16Hl+cdH8sHRg+yCbwsfbniYIY+hS1fVeXtToK25VLJA41Zq/aGZpW4BriEGl/V+cSXvhcTW5msxeF00Zasuh01FeP9jec7AkSQhPdq1g029hsAzz3t0ANP3ZWmIEyIzrmVmxAoGBAMdSSTvhrUD3kukWGCswHqW+rkwFhwLoY8zPZNNAp6OLtYhiXy7GfHM6xNkrNEHUYh2rCAZeRfc9Rmp3YSBdyCebaIqae1zM5zoK0lQuv88ZpqF+NnQnoYB40qF1yL/Wy7slMtI/HocohCzNtAA/ZMwRh2q+kSfFbYWTUb72JbgpAoGBAIaJeSGkB2BP0iezqPu8U50ZecgCzCMekcBDIQt3PGWlTXjJBMxf7LHX/jN4zxFi6OmGVJU/+b0bKBReQM+JwKcaNQn+N2Wuy1pT23vFM6zQCFqWRfvXPxu8+nZ5YpvNMdfmzMLvzKGGOVvbMv7Jo43chAcYspDVNS5glxGqXvBBAoGAPwkA7BUk66TgKyK3pgDj0FsLWDNvTTYdScpVApIx8gDe+jDSFULkXLS7SErnjeIS3XsXYJwz2ErimA0FBG1kPVJir2LHnMOYZLzDY6gdNOvRzMTTh8x4wN51Dmbng/P0Hk1XUzJu/yOLGXg8cs+Zmwf4IYP+9+ryBgpfEdtadnECgYEAxq4fcFVARYOWBAICJ6/IrEqdzuXw+bzy8HrZLAG8UNtPXKYbU0QP3YETgrlkKBUQo/j2A8ncPa7sxgYaYaMg74ywlZfWBH635PW1w9lSxa9cS7OB3OvsBMQC27t+hystmhD6lg1Ict82KnwK64Fc8IlzQbXb++Jm4T3iNLzl8vY=';
+//支付宝的公钥，查看地址：https://openhome.alipay.com/platform/keyManage.htm?keyType=partner
+$alipay_config['alipay_public_key'] = 'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA42S53+3Z94IkWys5faPJd8xbPur8FlYPOsgRs5mHlWZI/rfKVw6fo3tavhX5MAIAJ+JzogftPIg9gGGOFgoY8wnbSI8ztYTyvGjxqoHYFJWHYCbjXuf8xKA7nqhJt9+9+osuR7a7nQr5bNDI9waXUp8twTD/9JJEp7Tl10/cZREVaURdqT/MBR3zxR6kltbQxKRsvLvO17MpPHHA/UagYnRcHPtqU0iXvLKwxf8iQhCdXPzjzxA94avuyTOEYPuo3pfMfZRXD/IuUmSwN0wfYex4iFIG67g+hRoO2fANEwJRerubKgyp4hGWd3Quq/vGBfq6YUu1ReBSF8bpEqVz+QIDAQAB';
+$alipay_config['app_id'] = '2018010601643542';
+ */
+ /*
+//	var_dump($request);exit;
+$alipay_config['app_id'] = '2016090101833096';								
+ $alipay_config['partner'] ='2088421787930986';	
+//商户的私钥,此处填写原始私钥去头去尾，RSA公私钥生成：https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.nBDxfy&treeId=58&articleId=103242&docType=1
+
+$alipay_config['private_key']='MIICXAIBAAKBgQCtfZiC9LAlFl5cuBKWMSHMihunI1xCldIaMlv1ZN7cVAmfOGqXj/pL7sDCTd0nQHBHD3c84zVz4OcvAVtsCULqdDUK2iOON8qOzChU9e66ZBBOdeHIPDWfCeAFEyp9UQT6tkyrCljfIwrqrn3QrbL4VaVK5uQX9OIxeczXtnin0QIDAQABAoGBAKZTxhau3f0AgAEmXHNvsTa2paJMrVQM7Pw+kZknVt4nF351iQO7fjy0LktaeQ77oWkPM8LFFeb9lMak53AhROuLwVeNTK+ie0+2zlkeA5AnO1MoPvQ62ShgwhaG3EZ81HgmZxNnLDaCK/WuEyDW9qsYokJpUiIbcp48NjA0E8gdAkEA14z52PJ24SOTAr6+aF+nKtzCPNANZdULwB8a1VLoMoXsjZaD5ypaT5HGLHgGC/tGHqQGaQZn5yoZ6h6zz0WLPwJBAM4MD0QutC24ihf3kNKmcPPIknywGtC3XzBV3uHd7t/HZpx1+0Vsunn7D2smTDCW09oghr1JRFoepYK/DS3SWO8CQFdOabCe3NnqH9Sfz93UyJAK5L3fA144wc6qiqLXNuen6R2cVobeV8Ac6mj+oGxf9ZHZnCMUDifKnL6AexI8N98CQCq1NTTcuVwAtB7joZEIDsF5AWP23JgGaiSKp/gJGEop+orTqZFqR/ygnUGIXqJzoNXFiCgT16cWUxgWoZSt1OECQAaR7eH/ZdbiTthZY8OVZgCT/2VzU79qODI5gTmNFHaZktCpH0SXrqiBg6/5VUVCh2isJgY7V+Fi3gMfXgP2k+U=';
+$alipay_config['alipay_public_key']='MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDI6d306Q8fIfCOaTXyiUeJHkrIvYISRcc73s3vF1ZT7XN8RNPwJxo8pWaJMmvyTn9N4HQ632qJBVHf8sxHi/fEsraprwCtzvzQETrNRwVxLO5jVmRGi60j8Ue1efIlzPXV9je9mkjzOmdssymZkh2QhUrCmZYI/FCEa3/cNMW0QIDAQAB';
+*/
+//异步通知接口
+$alipay_config['service'] = 'http://'.$_SERVER['HTTP_HOST'].'/api/payment/alipay/noitfy.php';
+//↑↑↑↑↑↑↑↑↑↑请在这里配置您的基本信息↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+//签名方式 不需修改
+$alipay_config['sign_type'] = strtoupper('RSA2');
+
+//字符编码格式 目前支持 gbk 或 utf-8
+$alipay_config['input_charset'] = strtolower('utf-8');
+//ca证书路径地址，用于curl中ssl校验
+//请保证cacert.pem文件在当前文件夹目录中
+//$alipay_config['cacert'] = getcwd() . '/cacert.pem';
+//访问模式,根据自己的服务器是否支持ssl访问，若支持请选择https；若不支持请选择http
+$alipay_config['transport'] = 'http';
